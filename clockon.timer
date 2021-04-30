@@ -1,0 +1,10 @@
+[Unit]
+Description=MicroKeeper Clock on Automator Timer
+Requires=clockon.service
+
+[Timer]
+OnCalendar=Mon..Fri 9:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

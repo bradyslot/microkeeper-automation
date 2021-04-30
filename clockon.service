@@ -1,0 +1,10 @@
+[Unit]
+Description=MicroKeeper Clock on Automator Service
+Wants=clockon.timer
+
+[Service]
+Type=oneshot
+ExecStart=%h/bin/clockon.py
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=MicroKeeper Clock off Automator Service
+Wants=clockoff.timer
+
+[Service]
+Type=oneshot
+ExecStart=%h/bin/clockoff.py
+
+[Install]
+WantedBy=default.target
