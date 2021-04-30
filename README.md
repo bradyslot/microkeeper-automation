@@ -10,3 +10,7 @@ Copy .service and .timer files into ~/.config/systemd/user/
 ```
 $ systemctl --user enable clocko*
 ```
+##### Depends
+
+python package: selenium\
+system package: chromedriver
