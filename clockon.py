@@ -5,7 +5,9 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
-driver = webdriver.Chrome()
+options = webdriver.ChromeOptions()
+options.add_argument('headless')
+driver = webdriver.Chrome(options=options)
 driver.get("https://microkeeper.com.au/login.php")
 username = driver.find_element_by_id("username")
 username.clear()
