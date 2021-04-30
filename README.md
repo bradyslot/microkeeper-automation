@@ -12,5 +12,5 @@ $ systemctl --user enable clocko*
 ```
 ##### Depends
 
-python package: selenium\
-system package: chromedriver
+python packages: selenium\
+system packages: python3, chromedriver, google-chrome
