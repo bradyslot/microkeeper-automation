@@ -1,6 +1,5 @@
 [Unit]
 Description=MicroKeeper Clock off Automator Timer
-Requires=clockoff.service
 
 [Timer]
 OnCalendar=Mon..Fri 17:00
